@@ -18,7 +18,6 @@ irmap是一个用来做高中毕业去向的工具。基于Bootstrap和百度地
 你只用更改config.js文件里的内容就能完成整个地图的生成。示例如下：
 
 ```javascript
-/** 更多样式 http://developer.baidu.com/map/custom/list.htm */
 var MAP_STYLE = "hardedge";
 
 var DATA = {
