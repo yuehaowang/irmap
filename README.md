@@ -51,6 +51,8 @@ var ABOUT = {
 - MAP_TITLE 地图标题。
 - ABOUT 关于界面中的内容。格式：{"标题" : ["第一行内容", "第二行内容"]}。
 
+更改完成后，用浏览器打开index.html就能看到结果。
+
 ## 开源协议
 
 GPL协议（协议详情见：[维基百科](https://en.wikipedia.org/wiki/GNU_General_Public_License)）
