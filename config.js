@@ -13,7 +13,7 @@ var DATA = {
 };
 
 var SPEC_POS = {
-	"univ_C" : [121.597479,31.185356]
+	"univ_C" : [121.597479, 31.185356]
 };
 
 var MAP_TITLE = "毕业去向";

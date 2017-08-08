@@ -15,24 +15,41 @@ irmap是一个用来做高中毕业去向的工具。基于Bootstrap和百度地
 
 ## 如何使用？
 
-你只用更改config.js文件里的内容就能完成整个地图的生成。示例如下：
+你只用在index.html中添加你的百度地图AK码以及更改config.js文件里的内容就能完成整个地图的生成。
+
+### 获取百度地图开放平台AK码
+
+关于如何获取百度地图AK码，其实很简单，直接去[百度地图开放平台](http://lbsyun.baidu.com/)里点击“申请密钥”，然后填写一个申请表。申请表比照下图填写，填写之后提交就能获取AK码了：
+
+![AK申请表](http://images.cnblogs.com/cnblogs_com/yorhom/731449/o_baidu_ak_form.png)
+
+用文本编辑器打开index.html，将这个密钥填写在index.html的下图所示位置并保存文件：
+
+```
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=亲，密钥填这里"></script>
+```
+
+### 更改config.js
+
+之后更改config.js。示例如下：
 
 ```javascript
 var MAP_STYLE = "hardedge";
 
 var DATA = {
-	"city_1" : {
-		"univ_A" : ["Peter", "Mary"],
-		"univ_B" : ["Tony", "Pepper"]
+	"城市1" : {
+		"大学A" : ["Peter", "Mary"],
+		"大学B" : ["Tony", "Pepper"]
 	},
 
-	"city_2" : {
-		"univ_C" : ["Stephen", "Klay", "Kevin"]
+	"城市2" : {
+		"大学C" : ["Stephen", "Klay", "Kevin"],
+		"大学D" : ["Lebron"]
 	}
 };
 
 var SPEC_POS = {
-	"univ_C" : [121.597479, 31.185356]
+	"大学C" : [121.597479, 31.185356]
 };
 
 var MAP_TITLE = "毕业去向";
@@ -46,12 +63,12 @@ var ABOUT = {
 这个文件会被自动引进项目中，所以不要更改这个文件的名字和位置，其中定义的变量将会在项目中被使用。以下介绍其中定义的变量：
 
 - MAP_STYLE 地图样式，参考[http://developer.baidu.com/map/custom/list.htm](样式列表)。
-- DATA 学校数据。格式参考上面的示例。地图上的地标根据这个变量里的内容自动定位。
+- DATA 学校数据，[JSON](http://www.json.org/json-zh.html)格式。格式参考上面的示例。地图上的地标根据这个变量里的内容自动定位。
 - SPEC_POS 一些学校（比如国外的学校）的位置百度地图无法通过搜索定位，或者定位有误，更改这个属性可以设置学校的经纬度从而辅助定位。
 - MAP_TITLE 地图标题。
-- ABOUT 关于界面中的内容。格式：{"标题" : ["第一行内容", "第二行内容"]}。
+- ABOUT 关于界面中的内容。格式：`{"标题" : ["第一行内容", "第二行内容"]}`。
 
-更改完成后，用浏览器打开index.html就能看到结果。
+更改完成后，保存config.js文件，用浏览器打开index.html就能看到结果。
 
 ## 开源协议
 
