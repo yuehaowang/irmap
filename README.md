@@ -25,7 +25,7 @@ irmap是一个用来做高中毕业去向的工具。基于Bootstrap和百度地
 
 用文本编辑器打开index.html，将这个密钥填写在index.html的下图所示位置并保存文件：
 
-```
+```html
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=亲，密钥填这里"></script>
 ```
 
