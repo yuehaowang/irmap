@@ -62,9 +62,9 @@ var ABOUT = {
 
 这个文件会被自动引进项目中，所以不要更改这个文件的名字和位置，其中定义的变量将会在项目中被使用。以下介绍其中定义的变量：
 
-- MAP_STYLE 地图样式，参考[http://developer.baidu.com/map/custom/list.htm](样式列表)。
+- MAP_STYLE 地图样式，参考[样式列表](http://developer.baidu.com/map/custom/list.htm)。
 - DATA 学校数据，[JSON](http://www.json.org/json-zh.html)格式。格式参考上面的示例。地图上的地标根据这个变量里的内容自动定位。
-- SPEC_POS 一些学校（比如国外的学校）的位置百度地图无法通过搜索定位，或者定位有误，更改这个属性可以设置学校的经纬度从而辅助定位。
+- SPEC_POS 一些学校（比如国外的学校）的位置百度地图无法通过搜索定位，或者定位有误，更改这个属性可以设置学校的经纬度从而辅助定位。（百度地图开放平台提供了一个拾取经纬度的工具，见[百度地图坐标拾取系统](http://api.map.baidu.com/lbsapi/getpoint/index.html)）
 - MAP_TITLE 地图标题。
 - ABOUT 关于界面中的内容。格式：`{"标题" : ["第一行内容", "第二行内容"]}`。
 
