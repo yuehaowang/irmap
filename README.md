@@ -10,7 +10,7 @@ irmap是一个用来做高中毕业去向的工具。基于Bootstrap和百度地
 
 ![6map](http://images.cnblogs.com/cnblogs_com/yorhom/731449/o_6map.png)
 
-在线地址：[http://wyh.wjjsoft.com/6map/](http://wyh.wjjsoft.com/6map/)
+在线地址：[http://wyh.wjjsoft.com/apps/6map/](http://wyh.wjjsoft.com/apps/6map/)
 
 
 ## 如何使用？
