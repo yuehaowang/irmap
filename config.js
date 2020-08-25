@@ -20,5 +20,5 @@ var MAP_TITLE = "毕业去向";
 
 var ABOUT = {
 	"作者" : ["Yuehao"],
-	"框架" : ["irmap", "Bootstrap", "百度地图"]
+	"框架" : ["<a href='https://github.com/yuehaowang/irmap' target='_blank'>irmap</a>", "Bootstrap", "百度地图"]
 };

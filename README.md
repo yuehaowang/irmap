@@ -8,7 +8,7 @@ irmap是一个用来做高中毕业去向的工具。基于Bootstrap和百度地
 
 - ### 6map
 
-![6map](http://images.cnblogs.com/cnblogs_com/yorhom/731449/o_6map.png)
+![6map](screenshots/6map.png)
 
 在线地址：[http://wyh.wjjsoft.com/apps/6map/](http://wyh.wjjsoft.com/apps/6map/)
 
@@ -21,13 +21,15 @@ irmap是一个用来做高中毕业去向的工具。基于Bootstrap和百度地
 
 关于如何获取百度地图AK码，其实很简单，直接去[百度地图开放平台](http://lbsyun.baidu.com/)里点击“申请密钥”，然后填写一个申请表。申请表比照下图填写，填写之后提交就能获取AK码了：
 
-![AK申请表](http://images.cnblogs.com/cnblogs_com/yorhom/731449/o_baidu_ak_form.png)
+![AK申请表](screenshots/baidu_ak_form.png)
 
 用文本编辑器打开index.html，将这个密钥填写在index.html的下图所示位置并保存文件：
 
 ```html
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=亲，密钥填这里"></script>
 ```
+
+注意：如果你的发布平台支持HTTPS协议，请将上面链接中"http"部分改为"https"。
 
 ### 更改config.js
 
@@ -69,6 +71,10 @@ var ABOUT = {
 - ABOUT 关于界面中的内容。格式：`{"标题" : ["第一行内容", "第二行内容"]}`。
 
 更改完成后，保存config.js文件，用浏览器打开index.html就能看到结果。
+
+## 发布地图
+
+推荐使用Github Pages发布你所制作完成的地图。你也可以使用自己的服务器，并以静态页面的形式发布地图。
 
 ## 开源协议
 
