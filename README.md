@@ -2,7 +2,7 @@
 
 ## 简介
 
-irmap是一个用来做高中毕业去向的工具。基于Bootstrap和百度地图。兼容各大主流浏览器，iOS，Android，以及QQ和微信等平台。
+IRMap (Ideal Reality Map) 是一个用来做高中毕业去向的工具。基于Bootstrap和百度地图。兼容各大主流浏览器，iOS，Android，以及QQ和微信等平台。
 
 以下是示例展示：
 
@@ -10,7 +10,7 @@ irmap是一个用来做高中毕业去向的工具。基于Bootstrap和百度地
 
 ![6map](screenshots/6map.png)
 
-在线地址：[http://wyh.wjjsoft.com/apps/6map/](http://wyh.wjjsoft.com/apps/6map/)
+在线地址：[http://yuehaolab.com/apps/6map/](http://yuehaolab.com/apps/6map/)
 
 
 ## 如何使用？
